@@ -1,0 +1,44 @@
+CREATE TABLE vets (
+  id number(4)  NOT NULL ,
+  first_name VARCHAR(30),
+  last_name VARCHAR(30)
+) ;
+
+CREATE TABLE specialties (
+  id number(4)  NOT NULL ,
+  name VARCHAR(80)
+) ;
+
+CREATE TABLE vet_specialties (
+  vet_id number(4)  NOT NULL,
+  specialty_id number(4)  NOT NULL
+) ;
+
+CREATE TABLE types (
+  id number(4)  NOT NULL ,
+  name VARCHAR(80)
+) ;
+
+CREATE TABLE owners (
+  id number(4)  NOT NULL ,
+  first_name VARCHAR(30),
+  last_name VARCHAR(30),
+  address VARCHAR(255),
+  city VARCHAR(80),
+  telephone VARCHAR(20)
+) ;
+
+CREATE TABLE pets (
+  id number(4)  NOT NULL ,
+  name VARCHAR(30),
+  birth_date DATE,
+  type_id number(4)  NOT NULL,
+  owner_id number(4)  NOT NULL
+) ;
+
+CREATE TABLE visits (
+  id number(4)  NOT NULL ,
+  pet_id number(4)  NOT NULL,
+  visit_date DATE,
+  description VARCHAR(255)
+) ;

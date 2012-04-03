@@ -1,0 +1,5 @@
+This project shows how to automatically deploy a web application (the SpringSource version of PetStore) using Xebia's DeployIT tool.
+The target environment is WebLogic 10.2 and Oracle 10 XE.
+
+See 'readme.txt' for the orininal versions comments
+
