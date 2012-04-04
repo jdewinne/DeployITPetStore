@@ -305,7 +305,7 @@
 						<deployable>
 							<name>petclinicDS</name>
 							<type>wls.DataSourceSpec</type>
-							<jndiNames>java:comp/env/jdbc/petclinic</jndiNames>
+							<jndiNames>jdbc/petclinic</jndiNames>
 							<driverName>oracle.jdbc.xa.client.OracleXADataSource</driverName>
 							<url>jdbc:oracle:thin:@ora:1521:XE</url>
 							<username>{{DB_USERNAME}}</username>

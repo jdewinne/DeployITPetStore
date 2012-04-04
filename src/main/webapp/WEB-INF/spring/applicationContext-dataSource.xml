@@ -24,7 +24,7 @@
 	</bean>
 -->
 	<!-- JNDI DataSource for JEE environments -->
-	 <jee:jndi-lookup id="dataSource" jndi-name="comp.env.jdbc.petclinic" resource-ref="false"/>
+	 <jee:jndi-lookup id="dataSource" jndi-name="jdbc/petclinic" resource-ref="false"/>
 	<!-- Database initializer. If any of the script fails, the initialization 
 		stops. -->
 	<!-- As an alternative, for embedded databases see <jdbc:embedded-database/>. -->
