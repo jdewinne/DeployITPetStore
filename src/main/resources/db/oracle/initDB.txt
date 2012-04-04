@@ -1,3 +1,11 @@
+drop table vets;
+drop table specialties;
+drop table vet_specialties;
+drop table types;
+drop table owners;
+drop table pets;
+drop table visits;
+
 CREATE TABLE vets (
   id number(4)  NOT NULL ,
   first_name VARCHAR(30),
