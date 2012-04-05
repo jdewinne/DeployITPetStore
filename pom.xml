@@ -101,8 +101,14 @@
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc</artifactId>
-			<version>14-10.2.0.1.0</version>
+			<version>11.2.0.3</version>
 		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901.jdbc4</version>
+		</dependency>
+            
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -306,8 +312,8 @@
 							<name>petclinicDS</name>
 							<type>wls.DataSourceSpec</type>
 							<jndiNames>jdbc/petclinic</jndiNames>
-							<driverName>oracle.jdbc.xa.client.OracleXADataSource</driverName>
-							<url>jdbc:oracle:thin:@ora:1521:XE</url>
+							<driverName>org.postgresql.Driver</driverName>
+							<url>jdbc:postgresql:PETSTORE</url>
 							<username>{{DB_USERNAME}}</username>
 							<password>{{DB_PASSWORD}}</password>
 						</deployable>

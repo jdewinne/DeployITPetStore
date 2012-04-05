@@ -1,0 +1,52 @@
+drop table vets;
+drop table specialties;
+drop table vet_specialties;
+drop table types;
+drop table owners;
+drop table pets;
+drop table visits;
+
+CREATE TABLE vets (
+  id numeric(4)  NOT NULL ,
+  first_name VARCHAR(30),
+  last_name VARCHAR(30)
+) ;
+
+CREATE TABLE specialties (
+  id numeric(4)  NOT NULL ,
+  name VARCHAR(80)
+) ;
+
+CREATE TABLE vet_specialties (
+  vet_id numeric(4)  NOT NULL,
+  specialty_id numeric(4)  NOT NULL
+) ;
+
+CREATE TABLE types (
+  id numeric(4)  NOT NULL ,
+  name VARCHAR(80)
+) ;
+
+CREATE TABLE owners (
+  id numeric(4)  NOT NULL ,
+  first_name VARCHAR(30),
+  last_name VARCHAR(30),
+  address VARCHAR(255),
+  city VARCHAR(80),
+  telephone VARCHAR(20)
+) ;
+
+CREATE TABLE pets (
+  id numeric(4)  NOT NULL ,
+  name VARCHAR(30),
+  birth_date DATE,
+  type_id numeric(4)  NOT NULL,
+  owner_id numeric(4)  NOT NULL
+) ;
+
+CREATE TABLE visits (
+  id numeric(4)  NOT NULL ,
+  pet_id numeric(4)  NOT NULL,
+  visit_date DATE,
+  description VARCHAR(255)
+) ;

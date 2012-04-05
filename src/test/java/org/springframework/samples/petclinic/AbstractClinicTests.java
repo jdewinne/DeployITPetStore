@@ -50,7 +50,6 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
  * use of {@link Autowired @Autowired} on the <code>clinic</code> instance
  * variable, which uses autowiring <em>by type</em>. As an alternative, we
  * could annotate <code>clinic</code> with
- * {@link javax.annotation.Resource @Resource} to achieve dependency injection
  * <em>by name</em>.
  * <em>(see: {@link ContextConfiguration @ContextConfiguration},
  * {@link org.springframework.test.context.support.DependencyInjectionTestExecutionListener DependencyInjectionTestExecutionListener})</em></li>
